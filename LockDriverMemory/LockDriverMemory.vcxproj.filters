@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\pch.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Typedef.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Helper.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Global.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{7f686767-c55d-4089-b1d9-2b572f967b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{997afba2-f46e-4bb1-9a36-91a99c5ea391}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
