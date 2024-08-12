@@ -12,6 +12,9 @@ While attempting to fuzz NVIDIA's display driver using an emulator like BochsCPU
 
 - Visual Studio
 - Windows Driver Kit (WDK)
+  
+## How does it work?
+Essentially in usermode, we can use VirtualLock to lock memory and in kernel mode, we can use MmProbeAndLockPages to do the same. MmProbeAndLockPages will make the memory resident and stay resident until it is unlocked. It will still crash your system if you try to lock an invalid address, however this should never happen with driver memory. In the code, we avoids locking any discarded PE section because those are the only type of memory that might be free'd by the system automatically. 
 
 ## Configuration
 
