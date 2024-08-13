@@ -1,6 +1,7 @@
 #include "Header/pch.h"
 #include "Header/Helper.h"
 
+// I'm sorry, we should implement a dynamic array but this should cover 99.999% of the situations
 size_t pPmldListCount = 0;
 PMDL   pPmldList[100] = {};
 
