@@ -79,7 +79,11 @@ BOOLEAN Helper::LockMemory(PVOID Address, ULONG Size)
         return FALSE;
     }
 
-    pPmldList[pPmldListCount++] = mdl;
+    // Hopefully no PE image is ever going to have more than 100 sections
+    if (pPmldListCount < 100)
+    {
+        pPmldList[pPmldListCount++] = mdl;
+    }
 
     DBP("Memory locked at address (%p) and size (%lx)", Address, Size);
 
